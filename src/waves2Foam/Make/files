@@ -75,6 +75,7 @@ $(relaxMethod)/$(relaxShape)/frozen/relaxationShapeFrozen.C
 $(relaxMethod)/$(relaxShape)/rectangular/relaxationShapeRectangular.C
 $(relaxMethod)/$(relaxShape)/cylindrical/relaxationShapeCylindrical.C
 $(relaxMethod)/$(relaxShape)/semiCylindrical/relaxationShapeSemiCylindrical.C
+$(relaxMethod)/$(relaxShape)/patchDist/relaxationShapePatchDist.C
 
 /* Derived relaxation shapes */
 $(relaxMethod)/$(relaxShape)/line/relaxationShapeLine.C
