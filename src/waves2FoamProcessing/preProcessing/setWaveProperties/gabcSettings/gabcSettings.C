@@ -130,7 +130,7 @@ autoPtr<gabcSettings> gabcSettings::New
     word gabcTypeName;
     dict.lookup("preProcessMethod") >> gabcTypeName;
 
-    gabcSettingsConstructorTable::iterator cstrIter =
+    auto cstrIter =
         gabcSettingsConstructorTablePtr_->find
         (
             gabcTypeName

@@ -99,7 +99,7 @@ autoPtr<wavesPorosityModel> wavesPorosityModel::New
         }
     }
 
-    wavesPorosityModelConstructorTable::iterator cstrIter =
+    auto cstrIter =
     		wavesPorosityModelConstructorTablePtr_->find(wavesPorosityModelTypeName);
 
     if (cstrIter == wavesPorosityModelConstructorTablePtr_->end())

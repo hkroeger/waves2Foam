@@ -75,7 +75,7 @@ autoPtr<externalWaveForcing> externalWaveForcing::New
         .lookupOrDefault<word>("externalForcing", "emptyExternal")
     );
 
-    externalWaveForcingConstructorTable::iterator cstrIter =
+    auto cstrIter =
         externalWaveForcingConstructorTablePtr_->find(externalType);
 
     if (cstrIter == externalWaveForcingConstructorTablePtr_->end())

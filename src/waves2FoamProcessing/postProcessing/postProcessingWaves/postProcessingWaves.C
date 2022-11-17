@@ -526,7 +526,7 @@ autoPtr<postProcessingWaves> postProcessingWaves::New
     const word& action
 )
 {
-    postProcessingWavesConstructorTable::iterator cstrIter =
+    auto cstrIter =
             postProcessingWavesConstructorTablePtr_->find(action);
 
     if (cstrIter == postProcessingWavesConstructorTablePtr_->end())

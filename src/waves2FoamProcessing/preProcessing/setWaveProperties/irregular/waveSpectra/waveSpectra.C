@@ -122,7 +122,7 @@ autoPtr<waveSpectra> waveSpectra::New
     word spectrumName;
     dict.lookup("spectrum") >> spectrumName;
 
-    waveSpectraConstructorTable::iterator cstrIter =
+    auto cstrIter =
             waveSpectraConstructorTablePtr_->find(spectrumName);
 
     if (cstrIter == waveSpectraConstructorTablePtr_->end())

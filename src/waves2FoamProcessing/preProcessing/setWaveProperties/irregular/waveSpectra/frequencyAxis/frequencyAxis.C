@@ -92,7 +92,7 @@ autoPtr<frequencyAxis> frequencyAxis::New
 {
     word discretisation(dict.subDict("frequencyAxis").lookup("discretisation"));
 
-    frequencyAxisConstructorTable::iterator cstrIter =
+    auto cstrIter =
             frequencyAxisConstructorTablePtr_->find(discretisation);
 
     if (cstrIter == frequencyAxisConstructorTablePtr_->end())

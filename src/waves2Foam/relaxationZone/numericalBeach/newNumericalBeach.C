@@ -58,7 +58,7 @@ autoPtr<numericalBeach> numericalBeach::New
         beachTypeName = coeffDict_.lookupOrDefault<word>("beachType","Empty");
     }
 
-    dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find("numericalBeach"+beachTypeName);
 
     if (cstrIter == dictionaryConstructorTablePtr_->end())

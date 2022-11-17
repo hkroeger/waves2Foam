@@ -59,7 +59,7 @@ autoPtr<relaxationShape> relaxationShape::New
 
     }
 
-    dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find
         (
             "relaxationShape"+relaxationShapeTypeName
@@ -88,7 +88,7 @@ autoPtr<relaxationShape> relaxationShape::New
     const fvMesh& mesh_
 )
 {
-    dictionaryConstructorTable::iterator cstrIter =
+    auto cstrIter =
         dictionaryConstructorTablePtr_->find
         (
             "relaxationShape"+relaxationShapeTypeName
