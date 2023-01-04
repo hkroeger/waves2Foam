@@ -17,8 +17,8 @@ export WAVES_DIR=$WM_PROJECT_DIR/modules/waves2Foam
 export WAVES_APPBIN=$FOAM_APPBIN
 export WAVES_LIBBIN=$FOAM_LIBBIN
 
-export WAVES_GSL_INCLUDE=$INSIGHT_THIRDPARTY_DIR/include
-export WAVES_GSL_LIB=$INSIGHT_THIRDPARTY_DIR/lib
+export WAVES_GSL_INCLUDE=$INSIGHT_THIRDPARTY_DIR/gsl/include
+export WAVES_GSL_LIB=$INSIGHT_THIRDPARTY_DIR/gsl/lib
 
 ### OTHER STATIC ENVIRONMENTAL VARIABLES
 ## Version number - first old numbering system for foam-extend, OpenFoam and up to OpenFoam-v3.0+
